@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: web
+
+logging:
+  level:
+    root: debug

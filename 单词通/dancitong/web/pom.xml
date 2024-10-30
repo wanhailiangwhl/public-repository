@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.dancitong</groupId>
+		<artifactId>dancitong-parent</artifactId>
+		<version>1.0</version>
+	</parent>
+	<artifactId>web</artifactId>
+	<version>1.0</version>
+	<packaging>war</packaging>
+	<name>web</name>
+	<description>单词通-web模块</description>
+	<dependencies>
+		<dependency>
+			<groupId>com.dancitong</groupId>
+			<artifactId>service</artifactId>
+			<version>${dancitong.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.dancitong</groupId>
+			<artifactId>entity</artifactId>
+			<version>${dancitong.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
